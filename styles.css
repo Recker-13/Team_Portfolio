@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(180deg, #dbd8d88a, #757878); /* Subtle gradient */
+    color: #333; /* Text color */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(180deg, rgb(18, 180, 80), #0bab43d0); /* Green theme */
+    color: black;
+    text-shadow: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 15px 15px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Team Section */
+#team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+    gap: 60px; /* Increased space between divs */
+    justify-content: center; /* Center horizontally */
+    align-items: stretch; /* Stretch team member height */
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1400px; /* Expanded section width */
+}
+
+/* Team Member Div */
+.team-member {
+    text-align: center;
+    padding: 50px; /* Increased padding for bigger divs */
+    border: 3px solid #171a1a;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(240, 240, 240, 0.771), #e8efeb);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Team Member Hover Effect */
+.team-member:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Member Image */
+.team-member img {
+    width: 200px; /* Larger image size */
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid rgb(26, 27, 26); /* Add green border around the image */
+}
+
+/* Team Member Text Styling */
+.team-member h3 {
+    font-size: 2rem; /* Larger font size for names */
+    color:rgb(7, 158, 181); /* Green text for emphasis */
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.team-member .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.team-member .experience,
+.team-member .previous-experience {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* View Portfolio Button */
+.team-member .portfolio-button {
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.team-member .portfolio-button:hover {
+    background-color: #1abc9c; /* Lighter green on hover */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(180deg, rgba(8, 207, 61, 0.771), #06ec6a);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
